@@ -1,17 +1,10 @@
-# (Ongoing) Fairness and Equity in Hot-spot policing
+# Accuracy and Equity in Hot-spot policing
 Code for capstone project
 
-By predicting emerging geographic hot-spots of violent
-crime, we can target police patrols and other interventions to reduce the societal harms resulting
-from violence. The recent National Institute of Justice Crime Forecasting Challenge compared
-the predictive accuracy of multiple machine learning approaches using historical data from
-Portland, Oregon. However, given that different societal processes (e.g., gangs, substance abuse,
-and mental health) may be driving the patterns of violent crime in different jurisdictions, it is
-not yet known which methodological approaches achieve high accuracy across cities. Moreover,
-predictive policing creates moral and ethical concerns, such as fairness and equity, which have
-been well-documented yet have not typically been incorporated into the design and evaluation
-of such systems. Thus the goal of this project is to use open crime data from multiple urban
-areas in order to develop and evaluate multiple machine learning methods with respect to both
-effectiveness and equity. The team will create appropriate evaluation metrics and will develop
-approaches that optimize these metrics across multiple cities, with the goals of producing fairer,
-more effective, and more generalizable predictive policing methods.
+Abstract - Several recent studies have demonstrated the efficacy of proactive policing strategies for crime prevention. By predicting emerging geographic hot-spots of violent crime, we can target police patrols and other interventions. However, predictive policing creates moral and ethical concerns, such as fairness and equity, which have been well-documented, yet have not been typically incorporated into the design and evaluation of such systems. In this work we develop machine learning methods to predict hot-spots of crime and present a way to measure equity among those areas. We then adjust the predictions based on the defined equity metric and analyze the trade-offs between accuracy and equity. We also see the performance of the two models based on the racial distribution of the targeted population.
+
+## Folder RandomForest
+Contains code used to model Random Forests on Census Tracts in NYC
+
+## Folder Chicago
+Contains the code for initial exploratory analysis done on Crime data of Chicago
