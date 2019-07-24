@@ -14,6 +14,10 @@ Fitted line
 Crimes captured
 ![rf_curve](https://user-images.githubusercontent.com/24549241/61807809-3ee9ec80-ae08-11e9-8890-44b1ff0618d5.png)
 
+## Predictions with equity measure
+ 
+![pred_op_comparison](https://user-images.githubusercontent.com/24549241/61807894-66d95000-ae08-11e9-8113-293287da6353.png)
+
 
 
 ## Folder RandomForest
