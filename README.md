@@ -4,13 +4,18 @@
 Several recent studies have demonstrated the efficacy of proactive policing strategies for crime prevention. By predicting emerging geographic hot-spots of violent crime, we can target police patrols and other interventions. However, predictive policing creates moral and ethical concerns, such as fairness and equity, which have been well-documented, yet have not been typically incorporated into the design and evaluation of such systems. In this work we develop machine learning methods to predict hot-spots of crime and present a way to measure equity among those areas. We then adjust the predictions based on the defined equity metric and analyze the trade-offs between accuracy and equity. We also see the performance of the two models based on the racial distribution of the targeted population.
 
 ### Why bother?
+
+Past studies indicate possible bias against certain groups and demographics due to a variety of reasons ranging from past prevalence of crimes in a location to feedback loops arising from continuous intevention in a geography and ignoring other areas.
+
 <img width="937" alt="Screen Shot 2019-07-24 at 11 51 46 AM" src="https://user-images.githubusercontent.com/24549241/61808474-74dba080-ae09-11e9-92cf-79cf96e4c264.png">
 
-The work presented focus on the following key areas:(1) Accuracy of predictive hot-spot methods and (2) Methods to bring about more equity into predictive models.
+The work presented focus on the following key areas:(1) Accuracy of predictive hot-spot methods and <br/>
+(2) Methods to bring about more equity into predictive models.
 
-Some of the key questions answered are the following:•What are the best evaluation metrics for measuring accuracy and equity in predictive policing? 
-Can simple equitymetrics, measuring to what extent patrols are concentrated or dispersed across a city, be improved to account forneighborhood demographics, socio-economics, and crime victimization/underlying need for policing? 
-Are there trade-offs between policing accuracy and equity, or is it possible to maximize both criteria simultaneously?
+Some of the key questions answered are the following:<br/>
+What are the best evaluation metrics for measuring accuracy and equity in predictive policing? <br/>
+Can simple equitymetrics, measuring to what extent patrols are concentrated or dispersed across a city, be improved to account forneighborhood demographics, socio-economics, and crime victimization/underlying need for policing? <br/>
+Are there trade-offs between policing accuracy and equity, or is it possible to maximize both criteria simultaneously?<br/>
 
 ### Models used:
 <img width="514" alt="modelCF" src="https://user-images.githubusercontent.com/24549241/61807650-f2061600-ae07-11e9-9da6-d22ae8dc7e34.png">
