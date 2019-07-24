@@ -7,4 +7,9 @@ Abstract - Several recent studies have demonstrated the efficacy of proactive po
 Contains code used to model Random Forests on Census Tracts in NYC
 
 ## Folder Chicago
-Contains the code for initial exploratory analysis done on Crime data of Chicago
+Contains the code for initial exploratory analysis done on crime data of Chicago
+
+## Folder Portland
+Contains the code for initial exploratory analysis done on crime data of Portland
+
+
