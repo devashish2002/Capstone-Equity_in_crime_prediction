@@ -17,8 +17,19 @@ What are the best evaluation metrics for measuring accuracy and equity in predic
 Can simple equitymetrics, measuring to what extent patrols are concentrated or dispersed across a city, be improved to account forneighborhood demographics, socio-economics, and crime victimization/underlying need for policing? <br/>
 Are there trade-offs between policing accuracy and equity, or is it possible to maximize both criteria simultaneously?<br/>
 
-### Models used:
+### Machine Learning models used:
+
+Long Short Term Memory (LSTM) neural networks
+Gaussian Processes (GP)
+Random Forests (RF)
+
 <img width="514" alt="modelCF" src="https://user-images.githubusercontent.com/24549241/61807650-f2061600-ae07-11e9-9da6-d22ae8dc7e34.png">
+
+#### Defining equity
+
+We have defined the metric as a proportion of estimated need of policing to the actual deployment on ground. Both these metrics cannot be directly measured but can be indirectly assessed through proxy measures. As a proxy for demand for policing, we consider the metric "Level of disorder" in neighborhoods measured by Vacant Buildings/Plots, 311 complaints, Garbage disposal problems etc. But from further discussions we decided to measure the Part 1 Violent Crimes as a proxy for policing demand with the assumption that all violent crimes are captured by the police department and gets reflected in the crime data. To assess the actual deployment of police forces we considered using drug/narcotics related crimes but historical data suggests that some locations might be more prone to drug related crimes. Instead we chose total number of arrests within a census tract as proxy considering that most of these instances happen during police patrolling.
+
+<img width="510" alt="Screen Shot 2019-07-24 at 12 04 56 PM" src="https://user-images.githubusercontent.com/24549241/61809426-46f75b80-ae0b-11e9-8342-862d56b029b5.png">
 
 ### Predictions without Equity measure
 
