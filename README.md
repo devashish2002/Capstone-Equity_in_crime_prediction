@@ -3,7 +3,7 @@ Code for capstone project
 
 Abstract - Several recent studies have demonstrated the efficacy of proactive policing strategies for crime prevention. By predicting emerging geographic hot-spots of violent crime, we can target police patrols and other interventions. However, predictive policing creates moral and ethical concerns, such as fairness and equity, which have been well-documented, yet have not been typically incorporated into the design and evaluation of such systems. In this work we develop machine learning methods to predict hot-spots of crime and present a way to measure equity among those areas. We then adjust the predictions based on the defined equity metric and analyze the trade-offs between accuracy and equity. We also see the performance of the two models based on the racial distribution of the targeted population.
 
-## Model comparison:
+## Models used:
 <img width="514" alt="modelCF" src="https://user-images.githubusercontent.com/24549241/61807650-f2061600-ae07-11e9-9da6-d22ae8dc7e34.png">
 
 ## Predictions without Equity measure
@@ -18,6 +18,13 @@ Crimes captured
  
 ![pred_op_comparison](https://user-images.githubusercontent.com/24549241/61807894-66d95000-ae08-11e9-8113-293287da6353.png)
 
+## Spatial distribution
+
+<img width="1358" alt="Screen Shot 2019-07-24 at 11 48 22 AM" src="https://user-images.githubusercontent.com/24549241/61808205-f54dd180-ae08-11e9-851f-f36ee813062e.png">
+
+## Racial distribution of targeted population
+
+<img width="1110" alt="Screen Shot 2019-07-24 at 11 49 14 AM" src="https://user-images.githubusercontent.com/24549241/61808270-144c6380-ae09-11e9-9183-d5b7e7378934.png">
 
 
 ## Folder RandomForest
