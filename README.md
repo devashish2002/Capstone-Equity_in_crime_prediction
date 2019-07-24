@@ -31,7 +31,12 @@ We have defined the metric as a proportion of estimated need of policing to the 
 
 <img width="510" alt="Screen Shot 2019-07-24 at 12 04 56 PM" src="https://user-images.githubusercontent.com/24549241/61809426-46f75b80-ae0b-11e9-8342-862d56b029b5.png">
 
+## Results
+The first section shows our best (Random Forest) model’s predictive accuracy in terms of a fitted line and the lift curve (our intervening accuracy) without taking into account the equity metric. Second shows how the lift curve changes after incorporating the equity measure. And finally in the third section, we look the racial distribution of the hot-spot areas before and after equity measure to get a sense of how our equity measure works in terms of fairness.
+
 ### Predictions without Equity measure
+
+The lift curve is developed by putting the actual crime numbers of hot-spot (Top50) areas and adding predicted crime numbers for the same hot-spot areas if there is a match with actual ones. The comparison is made by weekly, but the numbers aggregated yearly afterwards. The curve plays arole representing the potential police intervening accuracy of our suggestion.
 
 Fitted line
 ![rf_trend_pred](https://user-images.githubusercontent.com/24549241/61807781-2ed20d00-ae08-11e9-8265-15f472d77a1e.png)
@@ -41,13 +46,19 @@ Crimes captured
 
 ### Predictions with equity measure
  
+We get this updated curve simply by multiplying the predicted numbers with our equity measure which is a sign for over/under-policing. The reason the updated curve lifted and got closer to the actual curve is that we’ve increased the predicted crime numbers by multiplying them with the equity measure. So, we can infer that the general pattern for hot-spot areas matched by our models tend to be under-policed(policing ratio > 1). 
+ 
 ![pred_op_comparison](https://user-images.githubusercontent.com/24549241/61807894-66d95000-ae08-11e9-8113-293287da6353.png)
 
 ### Spatial distribution
 
+The hot-spot areas do not change much from one map to other as we compare real and prediction without equity. We see a concentration around midtown and downtown areas, also some around northern part of the city and near JFK airport. However, it can be seen that some hot-spots change after we adjust for equity metric.
+
 <img width="1358" alt="Screen Shot 2019-07-24 at 11 48 22 AM" src="https://user-images.githubusercontent.com/24549241/61808205-f54dd180-ae08-11e9-851f-f36ee813062e.png">
 
 ### Racial distribution of targeted population
+
+We compared the predictions of the RF models (with and without incorporation of equity measure) with respect to the demographics they are targeting. We plot the distribution of races as we intervene on the top hotspots measured by the prediction results from the two models (Figure 8). We observe that for the unconstrained model (without equity), thetop (around 10) hotspots have higher percentage of black people and lower proportion of whites among them.
 
 <img width="1110" alt="Screen Shot 2019-07-24 at 11 49 14 AM" src="https://user-images.githubusercontent.com/24549241/61808270-144c6380-ae09-11e9-9183-d5b7e7378934.png">
 
