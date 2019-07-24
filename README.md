@@ -25,7 +25,7 @@ Random Forests (RF)
 
 <img width="514" alt="modelCF" src="https://user-images.githubusercontent.com/24549241/61807650-f2061600-ae07-11e9-9da6-d22ae8dc7e34.png">
 
-#### Defining equity
+### Defining equity
 
 We have defined the metric as a proportion of estimated need of policing to the actual deployment on ground. Both these metrics cannot be directly measured but can be indirectly assessed through proxy measures. As a proxy for demand for policing, we consider the metric "Level of disorder" in neighborhoods measured by Vacant Buildings/Plots, 311 complaints, Garbage disposal problems etc. But from further discussions we decided to measure the Part 1 Violent Crimes as a proxy for policing demand with the assumption that all violent crimes are captured by the police department and gets reflected in the crime data. To assess the actual deployment of police forces we considered using drug/narcotics related crimes but historical data suggests that some locations might be more prone to drug related crimes. Instead we chose total number of arrests within a census tract as proxy considering that most of these instances happen during police patrolling.
 
